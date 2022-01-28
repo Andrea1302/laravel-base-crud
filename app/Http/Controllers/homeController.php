@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 class homeController extends Controller
 {
     public function home(){
-        return view('pages.home');
+
+        $comics = Comic::All();
+
+        return view('pages.home', compact('comics'));
     }
 }
