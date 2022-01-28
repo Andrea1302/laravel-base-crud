@@ -4,6 +4,9 @@
 
 @section('content')
    <div>
-    second page
+    
+        <h1>
+            {{$comic -> title}}
+        </h1>
     </div> 
 @endsection

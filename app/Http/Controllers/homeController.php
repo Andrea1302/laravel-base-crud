@@ -14,10 +14,11 @@ class homeController extends Controller
         return view('pages.home', compact('comics'));
     }
 
-    public function show($id){
-
+    public function show($id){ 
+        
         $comic = Comic::findOrFail($id);
         // dd($id);
         return view('pages.show', compact('comic'));
+        
     }
 }
