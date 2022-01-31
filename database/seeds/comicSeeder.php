@@ -12,6 +12,6 @@ class comicSeeder extends Seeder
      */
     public function run()
     {
-        factory(Comic::class, 50) -> create();
+        // factory(Comic::class, 50) -> create();
     }
 }
